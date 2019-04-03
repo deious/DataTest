@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Diagnostics;
 
 public class GameManager : MonoBehaviour
 {
+    Stopwatch sw = new Stopwatch();
+
     public CharacterList[] characterList;
-    public object[] Prefab;
+    //public object[] Prefab;
+    public GameObject[] Prefab;
+    public GameObject[] Prefabs;
+
     //public static GameManager Instance;
     private static GameManager instance;
     public static GameManager Instance
@@ -58,6 +64,15 @@ public class GameManager : MonoBehaviour
                 characterImages[i][j].preserveAspect = true;
 
             characterPicks[i] = new int[len];
+        }
+
+        // 방안 2
+        sw.Start();
+        for(int j = 0; j < Prefab.Length; j++)
+        {
+            Prefabs[j] = Instantiate(Prefab[j]);
+            DontDestroyOnLoad(Prefabs[j]);
+            
         }
     }
 
@@ -218,7 +233,7 @@ public class GameManager : MonoBehaviour
     // GameManager에서 각 Scene의 Manager에게 필요한 정보를 취합하여 보냄
     public GMBTInfo ToTestManager()
     {
-        Debug.Log(goodsCount[0] + ", " + goodsCount[1] + ", " + goodsCount[2]);
+        //Debug.Log(goodsCount[0] + ", " + goodsCount[1] + ", " + goodsCount[2]);
         return new GMBTInfo(goodsCount[0], goodsCount[1], goodsCount[2]);
     }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Diagnostics;
 
 public class DungeonGameManager : MonoBehaviour
 {
@@ -59,6 +60,20 @@ public class DungeonGameManager : MonoBehaviour
         {
             manage.controller[i].gameObject.SetActive(true);
         }
+
+        // 방안 1
+        for (int j = 0; j < GameManager.Instance.Prefab.Length; j++)
+        {
+            characterList[j].CharacterPrefab = GameManager.Instance.Prefab[j];
+            //리스트 값 집어넣기
+        }
+
+        // 방안 2 가져오기
+        /*for (int j = 0; j < GameManager.Instance.Prefabs.Length; j++)
+        {
+            characterList[j].CharacterPrefab = GameManager.Instance.Prefabs[j];
+        }*/
+
 
         // 리스트 값을 데이터베이스로 올리고 내리는 메소드가 필요 나중에 물어볼것
         // 시작 시 리스트 값을 내려 받기
