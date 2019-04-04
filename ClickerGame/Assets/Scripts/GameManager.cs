@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
 
     public CharacterList[] characterList;
     //public object[] Prefab;
-    public GameObject[] Prefab;
-    public GameObject[] Prefabs;
+    //public GameObject[] Prefab;
+    //public GameObject[] Prefabs;
 
     //public static GameManager Instance;
     private static GameManager instance;
@@ -68,12 +68,12 @@ public class GameManager : MonoBehaviour
 
         // 방안 2
         sw.Start();
-        for(int j = 0; j < Prefab.Length; j++)
+        /*for(int j = 0; j < Prefab.Length; j++)
         {
             Prefabs[j] = Instantiate(Prefab[j]);
-            DontDestroyOnLoad(Prefabs[j]);
-            
-        }
+            Prefabs[j].SetActive(false);
+            DontDestroyOnLoad(Prefabs[j]);       
+        }*/
     }
 
 

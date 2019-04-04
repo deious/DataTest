@@ -14,17 +14,37 @@ public class CharacterController : MonoBehaviour
     public static int characterCount = 3;
     int temp = 0;
     int SkilNum = 0;
+    GameObject gameObject;
     //AnimationClip ani;
+
+    /*void Awake()
+    {
+        for(int i = 0; i< character.Length; i++)
+        {
+            character[i].character = DungeonGameManager.Instance.characterList[i].CharacterPrefab;
+        }
+    }*/
 
     void Start()
     {
         characterCount = 3;
-        character[selected].character.SetActive(true);
+        //character[selected].character.SetActive(true);
+        for (int i = 0; i < DungeonGameManager.Instance.characterList.Length; i++)
+        {
+            //character[i].character = DungeonGameManager.Instance.characterList[i].CharacterPrefab;
+            //character[i].character = Instantiate(character[selected].character);
+            character[i].character = Instantiate(DungeonGameManager.Instance.characterList[i].CharacterPrefab);
+        }
+        //Instantiate(character[selected].character);
         //SkilNum = character[selected].character.transform.childCount;
         for(int i = 1; i < 5; i++)
         {
             character[selected].character.transform.GetChild(i).GetComponent<BoxCollider2D>().gameObject.SetActive(false);
         }
+        //Debug.Log(character[selected].character);
+        //gameObject = Instantiate(character[selected].character);
+        character[selected].character.SetActive(true);
+        //gameObject.SetActive(true);
         //Btn.Board.transform.GetChild(2).GetComponent<Button>().gameObject.SetActive(false);
     }
 

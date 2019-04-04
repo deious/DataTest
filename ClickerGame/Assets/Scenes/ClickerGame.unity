@@ -1131,38 +1131,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterList:
-  - CharacterPrefab: {fileID: 0}
+  - CharacterPrefab: {fileID: 1239453404214748479, guid: ce0df7df5c783814e97a5c15f9a07348,
+      type: 3}
     character: {fileID: 0}
-    AttackDamage: 10
+    AttackDamage: 20
     SkilDamage:
-    - 20
-    - 30
     - 40
-    Hp: 100
-  - CharacterPrefab: {fileID: 0}
-    character: {fileID: 0}
-    AttackDamage: 50
-    SkilDamage:
     - 60
-    - 70
     - 80
     Hp: 100
-  - CharacterPrefab: {fileID: 0}
+  - CharacterPrefab: {fileID: 1696623463519560526, guid: ba1d909fd36f138499a1f3550fac8b4b,
+      type: 3}
     character: {fileID: 0}
-    AttackDamage: 90
+    AttackDamage: 100
     SkilDamage:
-    - 100
-    - 110
     - 120
+    - 140
+    - 160
     Hp: 100
-  Prefab:
-  - {fileID: 1239453404214748479, guid: ce0df7df5c783814e97a5c15f9a07348, type: 3}
-  - {fileID: 1696623463519560526, guid: ba1d909fd36f138499a1f3550fac8b4b, type: 3}
-  - {fileID: 3919185758006779578, guid: a0e8bc4bf2022ea4fa7a134c03163256, type: 3}
-  Prefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - CharacterPrefab: {fileID: 3919185758006779578, guid: a0e8bc4bf2022ea4fa7a134c03163256,
+      type: 3}
+    character: {fileID: 0}
+    AttackDamage: 180
+    SkilDamage:
+    - 200
+    - 220
+    - 240
+    Hp: 100
   goodsText:
   - {fileID: 1409582086}
   - {fileID: 1679265224}

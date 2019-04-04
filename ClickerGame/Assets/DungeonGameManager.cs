@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Diagnostics;
+//using System.Diagnostics;
 
 public class DungeonGameManager : MonoBehaviour
 {
@@ -62,9 +62,17 @@ public class DungeonGameManager : MonoBehaviour
         }
 
         // 방안 1
-        for (int j = 0; j < GameManager.Instance.Prefab.Length; j++)
+        for (int i = 0; i < GameManager.Instance.characterList.Length; i++)
         {
-            characterList[j].CharacterPrefab = GameManager.Instance.Prefab[j];
+            Debug.Log(GameManager.Instance.characterList.Length);
+            characterList[i].CharacterPrefab = GameManager.Instance.characterList[i].CharacterPrefab;
+            characterList[i].AttackDamage = GameManager.Instance.characterList[i].AttackDamage;
+            for(int j = 0; j < 3; j++)
+            {
+                characterList[i].SkilDamage[j] = GameManager.Instance.characterList[i].SkilDamage[j];
+            }
+            characterList[i].Hp = GameManager.Instance.characterList[i].Hp;
+            //characterList[j].CharacterPrefab.SetActive(false);
             //리스트 값 집어넣기
         }
 
