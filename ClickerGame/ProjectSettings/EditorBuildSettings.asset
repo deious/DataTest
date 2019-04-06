@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScene.unity
     guid: 0fc6fdd3730865b4490b6d07b24e36e2
   - enabled: 1
+    path: Assets/Scenes/RelicsScence.unity
+    guid: 426a84b7973f211499a50570d2820e1f
+  - enabled: 0
     path: Assets/Scenes/TestScene1.unity
     guid: 0f3734c3065e63840bcd236ba976ad3d
   m_configObjects: {}
