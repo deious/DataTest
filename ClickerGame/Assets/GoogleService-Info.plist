@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>972685319440-ph6c0eo181c3s2fb3mmhsii0ofuu1mhv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.972685319440-ph6c0eo181c3s2fb3mmhsii0ofuu1mhv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBNuklbdzHlXeqJXhtMy8d7X9aGkvSi_Jg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>972685319440</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.CoffeeTree.Pathfinder</string>
+	<key>PROJECT_ID</key>
+	<string>pathfinder-77faf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pathfinder-77faf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:972685319440:ios:a9aba11ce89fd6e9</string>
+	<key>DATABASE_URL</key>
+	<string>https://pathfinder-77faf.firebaseio.com</string>
+</dict>
+</plist>

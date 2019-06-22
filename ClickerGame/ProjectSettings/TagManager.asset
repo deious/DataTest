@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Enemy
   - Boss
-  - Ground
   layers:
   - Default
   - TransparentFX
@@ -17,7 +16,7 @@ TagManager:
   - 
   - 
   - OverUI
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -43,7 +42,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Layer1
-    uniqueID: 3319251367
     locked: 0

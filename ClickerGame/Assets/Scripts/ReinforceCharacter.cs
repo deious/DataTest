@@ -12,24 +12,17 @@ public class ReinforceCharacter : MonoBehaviour
 
     int presetNum;
 
+    //  todo : 차후 게임 시작할때 조합 확인 후 반영할 수 있도록 변경
     void Start()
     {
         presetNum = 1;
     }
 
-    enum buff
-    {
-
-    }
     //  프리셋을 확인
     public void CheckPreset_Buff()
     {
         string presetName = EventSystem.current.currentSelectedGameObject.name;
- 
         int.TryParse(presetName.Substring(presetName.Length - 1, 1), out presetNum);
-
-        //characterSelect.Test();
-        //Debug.Log(character[presetNum - 1].GetComponent<Image>().sprite.name);
 
         CheckCharacter_Buff();
     }
@@ -40,7 +33,7 @@ public class ReinforceCharacter : MonoBehaviour
         //characterSelect.Test();
         //Debug.Log(character[presetNum - 1].GetComponent<Image>().sprite.name);
 
-        string effect = "buff test character : ";
+          string effect = "buff test character : ";
 
         if (GameManager.Instance.IsNotCharacterSelect(presetNum - 1))
             for (int i = 0; i < GameManager.Instance.CharacterPicks[presetNum - 1].Length; i++)
